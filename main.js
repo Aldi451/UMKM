@@ -1,23 +1,27 @@
-// Data Dummy Produk (Simulasi Database UMKM)
+// Data Dummy Produk (Simulasi Database UMKM) - Sudah diperbaiki tanda kurungnya
 const productsData = [
-    { id: 1, name: "Kopi Arabika Gayo", category: "makanan", price: "Rp 85.000", img: "https://via.placeholder.com/300x200" },
-    { id: 2, name: "Tas Anyaman Bambu", category: "kerajinan", price: "Rp 150.000", img: "https://via.placeholder.com/300x200" },
-    { id: 3, name: "Keripik Tempe Premium", category: "makanan", price: "Rp 20.000", img: "https://via.placeholder.com/300x200" },
-    { id: 4, name: "Kain Batik Tulis", category: "kerajinan", price: "Rp 350.000", img: "https://via.placeholder.com/300x200" }
+    { id: 1, name: "Kopi Arabika Gayo", category: "makanan", price: "Rp 85.000", img: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=400&h=300&q=80" },
+    { id: 2, name: "Tas Anyaman Bambu", category: "kerajinan", price: "Rp 150.000", img: "https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&fit=crop&w=400&h=300&q=80" },
+    { id: 3, name: "Keripik Tempe Premium", category: "makanan", price: "Rp 20.000", img: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=400&h=300&q=80" },
+    { id: 4, name: "Kain Batik Tulis", category: "kerajinan", price: "Rp 350.000", img: "https://images.unsplash.com/photo-1590736969955-71cb94801759?auto=format&fit=crop&w=400&h=300&q=80" }
 ];
 
 // Render Fungsi Produk
 const displayProducts = (products) => {
     const container = document.getElementById('product-container');
+    if (!container) return; // Pengaman jika elemen id tidak ditemukan
+    
     container.innerHTML = products.map(product => `
         <div class="col-md-3 col-sm-6 mb-4">
-            <div class="card border-0 shadow-sm">
-                <img src="${product.img}" class="card-img-top" alt="${product.name}">
-                <div class="card-body">
-                    <span class="badge badge-success mb-2">${product.category.toUpperCase()}</span>
-                    <h6 class="font-weight-bold mb-1">${product.name}</h6>
-                    <p class="text-danger small font-weight-bold">${product.price}</p>
-                    <button class="btn btn-sm btn-outline-success btn-block">Beli Sekarang</button>
+            <div class="card border-0 shadow-sm h-100">
+                <img src="${product.img}" class="card-img-top" alt="${product.name}" style="height: 180px; object-fit: cover;">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <span class="badge badge-success mb-2">${product.category.toUpperCase()}</span>
+                        <h6 class="font-weight-bold mb-1">${product.name}</h6>
+                        <p class="text-danger small font-weight-bold">${product.price}</p>
+                    </div>
+                    <button class="btn btn-sm btn-outline-success btn-block mt-2">Beli Sekarang</button>
                 </div>
             </div>
         </div>
@@ -55,21 +59,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Validasi & Handling Form Kontak
     const contactForm = document.getElementById('contactForm');
-    contactForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const name = document.getElementById('name').value;
-        const alertBox = document.getElementById('formAlert');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const alertBox = document.getElementById('formAlert');
 
-        // Simulasi pengiriman data asinkron (Async/Await ES8)
-        alertBox.className = "mt-3 alert alert-info";
-        alertBox.innerText = "Sedang mengirim pesan...";
-        alertBox.classList.remove('d-none');
+            alertBox.className = "mt-3 alert alert-info";
+            alertBox.innerText = "Sedang mengirim pesan...";
+            alertBox.classList.remove('d-none');
 
-        await new Promise(resolve => setTimeout(resolve, 1500)); // Simulasi delay jaringan
+            await new Promise(resolve => setTimeout(resolve, 1500)); // Simulasi delay jaringan
 
-        alertBox.className = "mt-3 alert alert-success";
-        alertBox.innerText = `Terima kasih ${name}, pesan Anda berhasil dikirim!`;
-        contactForm.reset();
-    });
+            alertBox.className = "mt-3 alert alert-success";
+            alertBox.innerText = `Terima kasih ${name}, pesan Anda berhasil dikirim!`;
+            contactForm.reset();
+        });
+    }
 });
