@@ -1,7 +1,7 @@
 // Data Dummy Produk (Simulasi Database UMKM) - Sudah diperbaiki tanda kurungnya
 const productsData = [
     { id: 1, name: "Kopi Arabika Gayo", category: "makanan", price: "Rp 85.000", img: "https://www.image2url.com/r2/default/images/1784003877499-0c7e9213-c6f4-41ea-8941-35ae44b1e51a.png?auto=format&fit=crop&w=600&h=450&q=80" },
-    { id: 2, name: "Maknan Tradisional Indonesian", category: "makanan", price: "Rp 200.000", img: "https://www.image2url.com/r2/default/images/1784012315277-0129d6ff-61cc-4b6c-885e-c45844003355.jpeg?auto=format&fit=crop&w=400&h=300&q=80" },
+    { id: 2, name: "Makanan Tradisional Indonesian", category: "makanan", price: "Rp 200.000", img: "https://www.image2url.com/r2/default/images/1784012315277-0129d6ff-61cc-4b6c-885e-c45844003355.jpeg?auto=format&fit=crop&w=400&h=300&q=80" },
     { id: 3, name: "Kerajinan Tangan", category: "Kerajinan", price: "Rp 20.000", img: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=400&h=300&q=80" },
     { id: 4, name: "Kain Batik Bali", category: "kerajinan", price: "Rp 350.000", img: "https://www.image2url.com/r2/default/images/1784011865798-363a7f2b-1446-48a1-9970-c04af5b93a3e.jpeg?auto=format&fit=crop&w=400&h=300&q=80" }
 ];
