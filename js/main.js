@@ -1,6 +1,6 @@
 // Data Dummy Produk (Simulasi Database UMKM) - Sudah diperbaiki tanda kurungnya
 const productsData = [
-    { id: 1, name: "Kopi Arabika Gayo", category: "makanan", price: "Rp 85.000", img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=450&q=80](https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&h=450&q=80" },
+    { id: 1, name: "Kopi Arabika Gayo", category: "makanan", price: "Rp 85.000", img: "https://www.image2url.com/r2/default/images/1784003877499-0c7e9213-c6f4-41ea-8941-35ae44b1e51a.png?auto=format&fit=crop&w=600&h=450&q=80" },
     { id: 2, name: "Tas Anyaman Bambu", category: "kerajinan", price: "Rp 150.000", img: "https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&fit=crop&w=400&h=300&q=80" },
     { id: 3, name: "Keripik Tempe Premium", category: "makanan", price: "Rp 20.000", img: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=400&h=300&q=80" },
     { id: 4, name: "Kain Batik Tulis", category: "kerajinan", price: "Rp 350.000", img: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=400&h=300&q=80" }
