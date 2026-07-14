@@ -3,7 +3,7 @@ const productsData = [
     { id: 1, name: "Kopi Arabika Gayo", category: "makanan", price: "Rp 85.000", img: "https://www.image2url.com/r2/default/images/1784003877499-0c7e9213-c6f4-41ea-8941-35ae44b1e51a.png?auto=format&fit=crop&w=600&h=450&q=80" },
     { id: 2, name: "Tas Anyaman Bambu", category: "kerajinan", price: "Rp 150.000", img: "https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&fit=crop&w=400&h=300&q=80" },
     { id: 3, name: "Keripik Tempe Premium", category: "makanan", price: "Rp 20.000", img: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=400&h=300&q=80" },
-    { id: 4, name: "Kain Batik Bali", category: "kerajinan", price: "Rp 350.000", img: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=400&h=300&q=80" }
+    { id: 4, name: "Kain Batik Bali", category: "kerajinan", price: "Rp 350.000", img: "https://www.image2url.com/r2/default/images/1784011865798-363a7f2b-1446-48a1-9970-c04af5b93a3e.jpeg?auto=format&fit=crop&w=400&h=300&q=80" }
 ];
 
 // Render Fungsi Produk
